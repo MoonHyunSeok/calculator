@@ -1,0 +1,124 @@
+/* styles/globals.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* 기본 여백 제거 */
+    background-color: #2f3d2b; /* 배경색 변경 */
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px; /* 제목 여백 줄임 */
+    text-align: center;
+    color: #ffffff; /* 텍스트 색상 변경 */
+}
+
+.calculator {
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    padding: 10px; /* 패딩 설정 */
+    width: 50vw; /* 너비를 브라우저 화면의 20%로 설정 */
+    max-width: 300px; /* 최대 너비 설정 */
+}
+
+input {
+    width: 93%;
+    height: 30px; /* 입력창 높이 줄임 */
+    font-size: 15px; /* 텍스트 크기 설정 */
+    text-align: right;
+    margin-bottom: 10px; /* 여백 설정 */
+    border: none; /* 테두리 제거 */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #a8d5ba; /* 입력창 배경색 변경 */
+    color: #000000; /* 입력창 텍스트 색상 변경 */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; /* 버튼 간격 줄임 */
+}
+
+button {
+    width: 100%; /* 버튼 너비를 100%로 설정 */
+    height: 50px; /* 버튼 높이 조정 */
+    font-size: 20px; /* 버튼 텍스트 크기 조정 */
+    border: none; /* 테두리 제거 */
+    border-radius: 10px;
+    background-color: #d9d9d9; /* 기본 버튼 배경색 변경 */
+    color: #000000; /* 버튼 텍스트 색상 변경 */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #c0c0c0; /* 버튼 호버 색상 변경 */
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #a0a0a0; /* 버튼 클릭 색상 변경 */
+}
+
+/* 특별한 버튼 색상 */
+button.operator {
+    background-color: #ff8c00; /* 연산자 버튼 색상 */
+    color: #ffffff; /* 연산자 버튼 텍스트 색상 */
+}
+
+button.operator:hover {
+    background-color: #ff6f00; /* 연산자 버튼 호버 색상 */
+}
+
+button.zero {
+    grid-column: span 2; /* 0 버튼을 두 개의 열을 차지하도록 설정 */
+}
+
+/* 반응형 버튼 크기 조정 */
+@media screen and (max-height: 800px) {
+    .calculator {
+        height: 90vh;
+    }
+    
+    button {
+        height: 55px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .calculator {
+        height: 82vh;
+    }
+    
+    button {
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    input {
+        height: 40px;
+    }
+}
+
+/* 모바일 화면 대응 */
+@media screen and (max-width: 480px) {
+    .calculator {
+        height: 95vh;
+        width: 95vw;
+        padding: 15px;
+    }
+    
+    button {
+        height: 60px;
+        font-size: 22px;
+    }
+    
+    .button-grid {
+        gap: 8px;
+    }
+}
