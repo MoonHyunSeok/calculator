@@ -64,7 +64,7 @@ const Calculator = () => {
     // JSX를 사용한 UI 렌더링
     return (
         <div className="calculator">
-            <h1>계산기</h1>
+            <h1>똥강아지 계산기</h1>
             {/* 계산기 디스플레이 */}
             <input 
                 type="text" 

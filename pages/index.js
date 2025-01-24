@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>계산기 웹앱</title>
+                <title>똥강아지 계산기</title>
                 <meta name="description" content="넥스트.js 기반의 계산기 웹앱" />
             </Head>
             <main>

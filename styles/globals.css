@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0; /* 기본 여백 제거 */
-    background-color: #2f3d2b; /* 배경색 변경 */
+    background-color: #676969; /* 배경색 변경 */
     font-family: 'Arial', sans-serif;
 }
 
@@ -16,16 +16,18 @@ h1 {
 }
 
 .calculator {
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-    padding: 10px; /* 패딩 설정 */
-    width: 50vw; /* 너비를 브라우저 화면의 20%로 설정 */
-    max-width: 300px; /* 최대 너비 설정 */
+    border-radius: 100px;
+    box-shadow: 0 5px 20px rgba(62, 63, 63, 0.5);
+    background-color: #4e725d;
+    padding: 50px; /* 패딩 설정 줄임 */
+    width: 20vw; /* 너비를 브라우저 화면의 20%로 설정 */
+    height: 60vh;
+    max-width: 300%; /* 최대 너비 줄임 */
 }
 
 input {
     width: 93%;
-    height: 30px; /* 입력창 높이 줄임 */
+    height: 100px; /* 입력창 높이 줄임 */
     font-size: 15px; /* 텍스트 크기 설정 */
     text-align: right;
     margin-bottom: 10px; /* 여백 설정 */
